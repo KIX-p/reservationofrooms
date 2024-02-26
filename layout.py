@@ -54,6 +54,8 @@ class Ui_Dialog(object):
         self.formLayout.setWidget(3, QtWidgets.QFormLayout.ItemRole.FieldRole, self.typeofroom)
         self.description = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
         self.description.setText("")
+        self.description.setScaledContents(True)
+        self.description.setWordWrap(True)
         self.description.setObjectName("description")
         self.formLayout.setWidget(4, QtWidgets.QFormLayout.ItemRole.FieldRole, self.description)
         self.verticalLayout.addLayout(self.formLayout)
