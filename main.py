@@ -20,6 +20,7 @@ class MyForm(QDialog):
             "Krolewski": "Pokoj bez wad"
         }
         self.ui.typeofroom.currentIndexChanged.connect(self.type_description)
+        self.type_description()
 
     def type_description(self):
         text = self.ui.typeofroom.currentText()
