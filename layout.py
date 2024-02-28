@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(518, 535)
+        Dialog.resize(502, 485)
         self.verticalLayoutWidget = QtWidgets.QWidget(parent=Dialog)
         self.verticalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 496, 481))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
@@ -31,12 +31,14 @@ class Ui_Dialog(object):
         self.formLayout = QtWidgets.QFormLayout()
         self.formLayout.setObjectName("formLayout")
         self.label_2 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
+        self.label_2.setStyleSheet("color:red")
         self.label_2.setObjectName("label_2")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.ItemRole.LabelRole, self.label_2)
         self.calendar = QtWidgets.QCalendarWidget(parent=self.verticalLayoutWidget)
         self.calendar.setObjectName("calendar")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.ItemRole.FieldRole, self.calendar)
         self.label_3 = QtWidgets.QLabel(parent=self.verticalLayoutWidget)
+        self.label_3.setStyleSheet("")
         self.label_3.setObjectName("label_3")
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.ItemRole.LabelRole, self.label_3)
         self.days = QtWidgets.QSpinBox(parent=self.verticalLayoutWidget)
